@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sowadaraya Swodha Beauty Parlour</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      background: #fff0f6;
+      color: #4b2e47;
+    }
+    header {
+      background: #8e5e9f;
+      padding: 20px 40px;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    header img {
+      height: 60px;
+    }
+    header h1 {
+      margin: 0 0 0 15px;
+      font-size: 28px;
+      font-weight: 700;
+    }
+    .owner {
+      font-style: italic;
+      margin-top: 5px;
+      font-size: 16px;
+      color: #e9c2ff;
+    }
+    main {
+      padding: 40px;
+      max-width: 900px;
+      margin: auto;
+    }
+    h2 {
+      color: #7d4097;
+      margin-bottom: 20px;
+      font-size: 26px;
+      border-bottom: 2px solid #d39bd8;
+      padding-bottom: 5px;
+    }
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit,minmax(260px,1fr));
+      gap: 25px;
+    }
+    .service-card {
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 0 10px #d3a6df;
+      overflow: hidden;
+      transition: transform 0.3s ease;
+    }
+    .service-card:hover {
+      transform: translateY(-6px);
+    }
+    .service-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+    .service-content {
+      padding: 15px;
+    }
+    .service-content h3 {
+      margin: 0 0 8px;
+      color: #662d91;
+    }
+    .address {
+      margin-top: 50px;
+      font-size: 18px;
+      line-height: 1.5;
+      color: #5b3673;
+    }
+    footer {
+      background: #8e5e9f;
+      color: white;
+      text-align: center;
+      padding: 15px 0;
+      margin-top: 60px;
+      font-size: 14px;
+    }
+    @media (max-width: 600px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      header h1 {
+        margin: 10px 0 0 0;
+      }
+    }
+    /* WhatsApp button style */
+    .whatsapp-btn {
+      position: fixed;
+      bottom: 25px;
+      right: 25px;
+      background-color: #25d366;
+      color: white;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      z-index: 1000;
+      text-decoration: none;
+    }
+    .whatsapp-btn:hover {
+      background-color: #1ebe57;
+    }
+    .whatsapp-icon {
+      width: 30px;
+      height: 30px;
+      fill: white;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div style="display: flex; align-items: center;">
+    <img src="logo.jpg" alt="soundarya swodha Beauty Parlour Logo" />
+    <div>
+      <h1>soundarya swodha Beauty Parlour</h1>
+      <div class="owner">Owner: Jana Haritha</div>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section>
+    <h2>Our Services</h2>
+    <div class="services">
+      <div class="service-card">
+        <img src="facial.jpg" alt="Facial Treatment" />
+        <div class="service-content">
+          <h3>Facial Treatment</h3>
+          <p>Revitalize your skin with our nourishing facial therapies tailored to your needs.</p>
+        </div>
+      </div>
+      <div class="service-card">
+        <img src="hair.jpg" alt="Hair Styling" />
+        <div class="service-content">
+          <h3>Hair Styling</h3>
+          <p>Professional haircuts and styling to enhance your natural beauty.</p>
+        </div>
+      </div>
+      <div class="service-card">
+        <img src="cure.jpg" alt="Manicure & Pedicure" />
+        <div class="service-content">
+          <h3>Manicure & Pedicure</h3>
+          <p>Elegant nail care and polish for perfect hands and feet.</p>
+        </div>
+      </div>
+      <div class="service-card">
+        <img src="makeup.jpg" alt="Makeup" />
+        <div class="service-content">
+          <h3>Makeup</h3>
+          <p>Expert makeup services for any occasion to make you shine.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="address">
+    <h2>Contact & Address</h2>
+    <p><strong>Address:</strong> 4th mile navakula gardens nellore, andhra pradesh, 524002</p>
+    <p><strong>Phone:</strong> +91 7989955909</p>
+    <p><strong>Email:</strong> contact@jharitha1986@gmail.com</p>
+  </section>
+</main>
+
+<!-- WhatsApp floating button -->
+<a
+  href="https://wa.me/919876543210"
+  target="_blank"
+  rel="noopener noreferrer"
+  class="whatsapp-btn"
+  aria-label="Chat with us on WhatsApp"
+>
+  <svg class="whatsapp-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+    <path
+      d="M20.52 3.48a11.88 11.88 0 0 0-16.79 16.8L2 22l2.72-.71a11.88 11.88 0 0 0 15.8-17.8Zm-8.53 14.65a7.54 7.54 0 0 1-4.05-1.18l-.29-.18-2.42.63.65-2.36-.19-.3a7.55 7.55 0 0 1 12.54-9.92 7.57 7.57 0 0 1-6.29 12.99Zm3.4-4.38c-.19-.1-1.12-.55-1.29-.61-.17-.06-.3-.1-.43.1s-.49.6-.6.72-.22.14-.4.05a5.11 5.11 0 0 1-1.5-.9 5.58 5.58 0 0 1-1.03-1.28c-.11-.2 0-.3.08-.39s.17-.21.25-.31a.59.59 0 0 0 .08-.16.21.21 0 0 0 0-.2c0-.07-.43-1.04-.59-1.42-.16-.38-.32-.33-.43-.34l-.36-.01a.85.85 0 0 0-.62.29 2.6 2.6 0 0 0-.78 1.89 3.77 3.77 0 0 0 .87 2.5 7.74 7.74 0 0 0 3.87 3.43 4.67 4.67 0 0 0 2.23.46 2.6 2.6 0 0 0 1.79-.9 3.45 3.45 0 0 0 1.07-2.03c.03-.17.03-.33.02-.37s-.07-.06-.19-.12Z"
+    />
+  </svg>
+</a>
+
+<footer>
+  &copy; 2025 Sowadaraya Swodha Beauty Parlour. All Rights Reserved.
+</footer>
+
+</body>
+</html>
+
